@@ -228,6 +228,7 @@ Auto Simulation, Auto SyncTransforms 이게 강제로 동기를 해주는거여�
 
 
 <br/>
+
 ### 4. Transform 한번만
 만약 한 캐릭터 안에 move.cs, Jump.cs, Dash.cs, Dodge.cs 있다고 가정하자. <br/>
 이 스크립트를 까봤더니 모두 트랜스폼을 건들이고 있다고 하면, 한 플레이어를 처리하기 위해서 트랜스폼 연산이 엄청 많이 매번 일어나게 되는것이다.<br/>
@@ -253,12 +254,14 @@ transform.rotation- = ...
 ### 1. Texture 세팅
 Texture 설정을 플랫폼별로 오버라이드를할수있다. (세팅을 해줄 수 있다)<br/>
 <br/>
+
 ![image](https://github.com/user-attachments/assets/8d8a8346-37a8-4d75-8778-efa9ec9bb42e)
 <br/>
 
 *) 텍스쳐 사이드는 2의 n승으로 해야한다. (POT)<br/>
 
 <br/>
+
 ![image](https://github.com/user-attachments/assets/692c7774-5043-4dd8-a392-268b9e33516e)
 
 <br/>
@@ -268,6 +271,7 @@ GPU메모리에 올린것은 CPU 메모리에서 날려버린다. <br/>
 하지만 이 Read/Write Enable을 체크하면 CPU 메모리에 없애지않고 그대로 남아있게 한다. <br/>
 결론적으로는 메모리가 두번 올라가있기때문에 앵간하면 끄는게 좋다.<br/>
 <br/>
+
 ![image](https://github.com/user-attachments/assets/2e3369b0-16bb-485a-948f-9d315486e510)
 
 <br/>
@@ -441,12 +445,7 @@ Streaming : 배경음(용량이 큰 아이들)을 Streaming으로 하면된다. 
 -> 연산비용을 줄일 수 있다.<br/>
 
 <br/>
+
 ### 3. 콜라이더는 기본도형 콜라이더를 쓰는게 좋다. 
 매시콜라이더는 최적화할수있는 여지들이 사라진다.<br/>
 
-<br/>
-<div align="right">
-  
-[목차로](#목차)
-
-</div>
